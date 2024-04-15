@@ -9,28 +9,50 @@
         content="Gotta Quiz Them All is a quiz game designed to challenge your knowledge on all things Pokémon!" />
     <meta name="keywords" content="Pokémon, quiz, quiz game, javascript, online quiz," />
 
-    <!-- Facebook, LinkedIn, Google Social Sharing Meta Tags-->
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Gotta Quiz Them All!" />
-    <meta property="og:description"
-        content="Gotta Quiz Them All is an online quiz you can take part in any time, anywhere and test your Pokémon knowledge!" />
-    <meta name="image" property="og:image" content="assets/images/" />
-    <meta property="og:image:alt" content="The Gotta Quiz Them All site shown on different devices" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="Gotta Quiz Them All!" />
-    <meta name="author" content="Warren Selby" />
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Page Title -->
     <title>Gotta Quiz Them All!</title>
 </head>
 
-<body>
+<body class="flex-container">
+    <a href="index.html">
+        <h1>Gotta Quiz Them All!</h1>
+    </a>
 
+    <!-- Outer container that holds all the Content-->
+    <div id="outer-container">
+        <h2>Are you ready to be a Pokemon Master!</h2>
+        <p>Time to test your knowledge and see if you have what it takes to be a Pokemon Master.</p>
+        <p>Use the buttons below to navigate to the page you would like to view. Simply click on the title at the top of
+            each page to return to the home page.</p>
+        <div class="btn-group">
+            <button id="open-modal" class="btn"> How to play</button>
+            <a href="game.html" class="btn">Play</a>
+            <a href="highscores.html" id="highscores" class="btn">High Scores</a>
+        </div>
+
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modal-container">
+        <div id="modal-content">
+            <h2>How to Play</h2>
+
+            <p>Press Play</p>
+            <p>Choose the Level of difficulty you would like to play</p>
+            <p>Answer the questions by clicking on the answer you think is correct</p>
+            <p> Record your high score, and play again - can you beat your score?</p>
+
+            <button id="close-modal" class="btn">Close</button>
+        </div>
+    </div>
 </body>
 
 </html>

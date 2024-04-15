@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Description"
+        content="Gotta Quiz Them All is a quiz game designed to challenge your knowledge on all things Pokémon!" />
+    <meta name="keywords" content="Pokémon, quiz, quiz game, javascript, online quiz," />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Page Title -->
+    <title>Gotta Quiz Them All! - Play!</title>
+</head>
+
+<body class="flex-container" id="outer-container">
+    <a href="index.html">
+        <h1>Gotta Quiz Them All!</h1>
+    </a>
+
+    <!-- Grey outer container that holds the content-->
+    <div class="outer" id="outer-container">
+
+        <!-- Quiz questions and buttons Contianer-->
+        <div id="difficulty">
+            <h2>Select your difficulty</h2>
+            <div class="btn-group">
+                <button class="btn difficulty" id="easy" onclick="apiAddress = easyQuiz"> Easy </button>
+                <button class="btn difficulty" id="medium" onclick="apiAddress = mediumQuiz"> Medium </button>
+                <button class="btn difficulty" id="hard" onclick="apiAddress = hardQuiz"> Hard</button>
+
+                <button id="next" class="btn next-btn hide">NEXT</button>
+            </div>
+        </div>
+
+        <!-- End Quiz & Final Score Container-->
+        <div id="end-area" class="hide">
+            <h2>You Scored: <span id="final-score"></span></h2>
+            <p>Congratulations on completing the quiz. You're a true Pokemon Master!</p>
+            <p>Want to save your score?</p>
+            <p>Fill in your trainer name below and submit your score.</p>
+            <form>
+                <input type="text" id="teamname" placeholder="Team Name">
+                <button class="btn" type="submit" id="submitscorebtn" disabled>Submit</button>
+            </form>
+            <div class="btn-group">
+                <a href="game.html" class="btn">Play Again?</a>
+                <a href="index.html" class="btn">Home</a>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
