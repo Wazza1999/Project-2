@@ -1,0 +1,129 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@700&family=Micro+5+Charted&display=swap');
+
+:root {
+    /* Typography */
+    --header-text: "Micro 5 Charted", sans-serif;
+    --content-text: "IBM Plex Sans JP", sans-serif;
+
+    /* Colours */
+    --DarkGoldenRod: #B8860B;
+    --red: #a50c3c;
+    --green: #047638;
+    --grey: #292929;
+    --black: #000000;
+}
+
+/* Removes all margins and Padding on everything so they can be fully customised */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Background image added with backup colour in case image fails to load */
+body {
+    background-image: url("../images/pokemon\ wallpaper.jpg");
+    background-color: var(--black);
+    background-size: cover;
+    font-family: var(--content-text);
+}
+
+/* Headings & Text */
+/* Page Title */
+h1 {
+    font-family: var(--header-text);
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+    font-style: italic;
+    color: var(--DarkGoldenRod);
+    text-align: center;
+    text-shadow: 10px 10px 10px var(--red);
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+    font-size: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p.answer-count,
+p.score-area {
+    padding-bottom: 1rem;
+}
+
+#highscoreslist{
+    list-style: none;
+}
+
+li{
+    text-align: center;
+    font-size: 0.75rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Containers */
+
+/*flex containers*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+/*outer containers*/
+#outer-container{
+    background-color: var(--grey);
+    opacity: 0.9;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    color: var(--DarkGoldenRod);
+    border-radius: 1,5rem;
+}
+
+/*ButtonGroups*/
+.btn-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Counter Area - Holds the questions, No and score on the game page*/
+#counter-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Button Styling*/
+
+/*emojicursor.app used for the emoji cursor*/
+.btn{
+    font-family: var(--content-text);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: var(--black);
+    border-radius: 2rem;
+    color: var(--DarkGoldenRod);
+    margin: 0.3rem;
+    box-shadow: -2px -2px 5px var(--DarkGoldenRod) inset;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎮</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
