@@ -140,13 +140,13 @@ cursor: not-allowed;
 
 /*Next Button design*/
 .next-btn{
-    background-color: var(--DarkGoldenRod);
+    background-color: var(--green);
     color: var(--black);
 }
 
 .next-btn{ 
     background-color: var(--black);
-    color: var(--DarkGoldenRod);
+    color: var(--green);
 }
 
 
