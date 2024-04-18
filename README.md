@@ -86,12 +86,12 @@ As the pages of the site have a background image, I wanted to keep the colour sc
 
 In my css file I have used variables to declare colours, and then used these throughout the css file. I was recently introduced to this method during a hackathon - it is a useful convention to use as it allows you to alter the colour throughout the website if you decide to update a colour, by changing the colour once in the variable.
 
-* I have used `#f5f5f5` & `#000000` as the primary and secondary colours used for the sites text.
+* I have used `#B8860B` & `#000000` as the primary and secondary colours used for the sites text.
 * I have used `#292929` as the overlay used over the sites background image.
 * I have used `#a50c3c` for the border of the modal and to display the wrong answers.
 * I have used `#047638` to display the correct answer.
 
-  ![Gotta Quiz Them All! Color Scheme](documentation/color-scheme.webp)
+  ![Gotta Quiz Them All! Color Scheme](documentation/)
 
 ### Typography
 
@@ -236,8 +236,6 @@ HTML, CSS, Javascript
 * [Open Trivia DataBase](https://opentdb.com/) - API used for the trivia questions.
 
 * [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - a google chrome extension to enable you to view JSON as raw data or parsed.
-
-* [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension that allows you to view your site as people with accessibility needs would see it.
 
 * [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
 

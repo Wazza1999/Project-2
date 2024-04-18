@@ -134,3 +134,19 @@ li{
     box-shadow: var(--black) inset;
 }
 
+.btn{[disabled]:hover
+cursor: not-allowed;
+}
+
+/*Next Button design*/
+.next-btn{
+    background-color: var(--DarkGoldenRod);
+    color: var(--black);
+}
+
+.next-btn{ 
+    background-color: var(--black);
+    color: var(--DarkGoldenRod);
+}
+
+
