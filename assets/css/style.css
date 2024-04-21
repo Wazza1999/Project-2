@@ -9,16 +9,9 @@
     /* Colours */
     --DarkGoldenRod: #B8860B;
     --red: #a50c3c;
-    --green: #047638;
+    --MistyRose: #ffe4e1;
     --grey: #292929;
     --black: #000000;
-}
-
-/* Removes all margins and Padding on everything so they can be fully customised */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 /* Background image added with backup colour in case image fails to load */
@@ -33,7 +26,7 @@ body {
 /* Page Title */
 h1 {
     font-family: var(--header-text);
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
     padding-top: 0.5rem;
     font-style: italic;
@@ -65,11 +58,11 @@ p.score-area {
     padding-bottom: 1rem;
 }
 
-#highscoreslist{
+#highscoreslist {
     list-style: none;
 }
 
-li{
+li {
     text-align: center;
     font-size: 0.75rem;
     padding-bottom: 0.5rem;
@@ -88,25 +81,25 @@ li{
 }
 
 /*outer containers*/
-#outer-container{
+#outer-container {
     background-color: var(--grey);
     opacity: 0.9;
     width: 80%;
     margin: auto;
     padding: 1rem;
     color: var(--DarkGoldenRod);
-    border-radius: 1,5rem;
+    border-radius: 1, 5rem;
 }
 
 /*ButtonGroups*/
-.btn-group{
+.btn-group {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 /* Counter Area - Holds the questions, No and score on the game page*/
-#counter-area{
+#counter-area {
     display: flex;
     justify-content: space-between;
 }
@@ -114,7 +107,7 @@ li{
 /*Button Styling*/
 
 /*emojicursor.app used for the emoji cursor*/
-.btn{
+.btn {
     font-family: var(--content-text);
     font-size: 0.75rem;
     font-weight: 500;
@@ -125,7 +118,8 @@ li{
     color: var(--DarkGoldenRod);
     margin: 0.3rem;
     box-shadow: -2px -2px 5px var(--DarkGoldenRod) inset;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎮</text></svg>") 16 0,auto; /*!emojicursor.app*/
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎮</text></svg>") 16 0, auto;
+    /*!emojicursor.app*/
 }
 
 .btn:hover {
@@ -134,19 +128,93 @@ li{
     box-shadow: var(--black) inset;
 }
 
-.btn{[disabled]:hover
-cursor: not-allowed;
+.btn[disabled]:hover {
+    cursor: not-allowed;
 }
 
 /*Next Button design*/
-.next-btn{
+.next-btn {
     background-color: var(--green);
     color: var(--black);
 }
 
-.next-btn{ 
+.next-btn {
     background-color: var(--black);
     color: var(--green);
 }
 
+/*classes to add and remove*/
+/* Hide from display*/
+.hide {
+    display: none;
+}
 
+/*styling for correct choice*/
+.correct {
+    border: var(--MistyRose) 0.75rem solid;
+}
+
+/*styling for incorrect choice*/
+.incorrect {
+    border: var(--red) 0.75rem solid;
+}
+
+.correctbtn {
+    background-color: var(--MistyRose);
+}
+
+.incorrectbtn {
+    background-color: var(--red);
+}
+
+/*media queries*/
+/*tablets*/
+@media only screen and (mid-width :481px) {
+
+    h1 {
+        font-size: 5rem;
+        padding-top: 1rem;
+    }
+
+    #outer-container {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    #modal-content {
+        padding: 1.5rem;
+    }
+
+    input {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    li {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .correct {
+        border: var(--red) 1rem solid;
+    }
+
+    /*styling for wrong choice */
+    .incorrect {
+        border: var(--MistyRose)
+    }
+}
