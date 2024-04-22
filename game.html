@@ -29,7 +29,7 @@
     <!-- Grey outer container that holds the content-->
     <div class="outer" id="outer-container">
 
-        <!-- Quiz questions and buttons Contianer-->
+        <!-- Difficulty buttons-->
         <div id="difficulty">
             <h2>Select your difficulty</h2>
             <div class="btn-group">
@@ -40,6 +40,25 @@
                 <button id="next" class="btn next-btn hide">NEXT</button>
             </div>
         </div>
+
+        <!-- Quiz questions and button containers-->
+        <div id="quiz-area" class="hide">
+            <div id="counter-area">
+                <p class="answer-count"> Question No:<span id="answer-no">1</span></p>
+                <p class="score-area">Score: <span id="score">0</span></p>
+            </div>
+            <hr>
+            <h2 id="question"></h2>
+            <div class="answer-btns btn-group">
+                <button class="btn answer-text" id="answer1"></button>
+                <button class="btn answer-text id="answer2"></button>
+                <button class="btn answer-text id="answer3"></button>
+                <button class="btn answer-text id="answer4"></button>
+
+                <button class="btn-next btn hide" id="next">Next</button>
+            </div>
+        </div>
+
 
         <!-- End Quiz & Final Score Container-->
         <div id="end-area" class="hide">
@@ -59,4 +78,9 @@
         </div>
         
     </div>
+
+    <!-- Javascript -->
+    <script src="assets/js/game.js"></script>
 </body>
+
+</html>

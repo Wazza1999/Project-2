@@ -128,9 +128,7 @@ li {
     box-shadow: var(--black) inset;
 }
 
-.btn[disabled]:hover {
-    cursor: not-allowed;
-}
+.btn[disabled]:hover {cursor: not-allowed;}
 
 /*Next Button design*/
 .next-btn {
@@ -167,6 +165,61 @@ li {
     background-color: var(--red);
 }
 
+/* Highscores Form */
+form {
+    display:flex;
+    flex-direction:column;
+}
+
+input{
+    font-family: var(--content-text);
+    font-size: 2rem;
+    color: var(--grey);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+/*Modal inspired by The quiz arms - https://github.com/kera-cudmore/TheQuizArms/blob/main/assets/css/style.css*/
+#modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--grey);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+
+/*modal opacity is now visable*/
+#modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Making the modal match the design of the rest of the containers*/
+
+#modal-content{
+width: 80%;
+border: var(--red) 4px solid;
+border-radius: 1.5rem;
+padding: 2rem;
+color:  var(--DarkGoldenRod);
+text-align: center;
+}
+
+/* adding margin to top of the close modal button*/
+#close-modal{
+    margin-top:3rem;
+}
+
 /*media queries*/
 /*tablets*/
 @media only screen and (mid-width :481px) {
@@ -200,21 +253,38 @@ li {
     }
 
     input {
+        font-size: 2rem;
+    }
+    
+      li {
         font-size: 1.5rem;
         padding-bottom: 0.5rem;
-    }
-
-    li {
-        font-size: 1.5rem;
-        padding-bottom: 0.5rem;
-    }
-
-    .correct {
+      }
+    
+      .correct {
+        border: var(--green) 1rem solid;
+      }
+    
+      /* Styling for incorrect choice */
+      .incorrect {
         border: var(--red) 1rem solid;
+      }
+    
+    
+    
+    /* Laptops */
+    @media only screen and (min-width : 769px) {
+    
+      h1 {
+        font-size: 6rem;
+        padding-top: 1.5rem;
+      }
+    
+      p {
+        padding-bottom: 1.75rem;
+      }
+    
+      #modal-content {
+        padding: 4rem;
+      }
     }
-
-    /*styling for wrong choice */
-    .incorrect {
-        border: var(--MistyRose)
-    }
-}
