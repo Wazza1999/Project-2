@@ -7,3 +7,9 @@ const easyQuiz = "https://opentdb.com/api.php?amount=5&category=15&difficulty=ea
 const mediumQuiz ="https://opentdb.com/api.php?amount=5&category=15&difficulty=medium&type=multiple";
 const hardQuiz ="https://opentdb.com/api.php?amount=5&category=15&difficulty=hard&type=multiple";
 
+//Difficulty buttons
+const easy = document.getElementById("easy");
+const medium = document.getElementById("medium");
+const hard = document.getElementById("hard");
+let apiAddress;
+
