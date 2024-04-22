@@ -13,3 +13,13 @@ const medium = document.getElementById("medium");
 const hard = document.getElementById("hard");
 let apiAddress;
 
+// Quiz Area
+const question = document.getElementById("question");
+const answerButtons = document.getElementsByClassName("answer-text");
+const answer1 = document.getElementById("answer1");
+const answer2 = document.getElementById("answer2");
+const answer3 = document.getElementById("answer3");
+const answer4 = document.getElementById("answer4");
+let correctAnswer;
+const next = document.getElementById("next");
+let answerSelected;

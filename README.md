@@ -6,15 +6,11 @@ Visit the deployed site: [Gotta Quiz Them All!]()
 
 Test your Pokemon knowledge today and find out if you got what it takes to be a Pokemon Master!
 
-Pub Quizzes are played all around the world, but they are especially popular in the UK. It is estimated that over half the pubs in the UK host a regular quiz night, thats roughly 23,600 pubs!
-
-During lockdowns pub quizzes remained popular - they just changed format to become virtual. This gave me the idea of creating a quiz site that would feel like a pub quiz, where users could play on their own to improve their general knowledge anywhere and at any time.
-
-![GitHub last commit](https://img.shields.io/github/last-commit/?color=red&style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/?color=orange&style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/?color=yellow&style=for-the-badge)
-![GitHub top language](https://img.shields.io/github/languages/top/?color=green&style=for-the-badge)
-![W3C Validation](https://img.shields.io/w3c-validation/html?logoColor=blue&style=for-the-badge&targetUrl=https%3A%2F%2Fkera-cudmore.github.io%2FTheQuizArms%2F)
+![GitHub last commit]
+![GitHub contributors]
+![GitHub language count]
+![GitHub top language]
+![W3C Validation]
 
 ## CONTENTS
 
@@ -97,26 +93,25 @@ In my css file I have used variables to declare colours, and then used these thr
 
 Google Fonts was used to import the chosen fonts for use in the site.
 
-* For the Page Title I have used the google font [Almendra](https://fonts.google.com/specimen/Almendra?preview.text=The%20Quiz%20Arms%20THE%20QUIZ%20ARMS&preview.text_type=custom&query=almendra). Almendra is based on a calligraphy style and I have chosen it as it looks like the type of font you would see on a pubs name sign, slightly medieval looking and grand.
+* For the Page Title I have used the google font.
 
-![Almendra Font Example](documentation/almendra.webp)
+!
 
-* For the body of the page I have used the google font [Quicksand](https://fonts.google.com/specimen/Quicksand?preview.text=The%20Quiz%20Arms%20THE%20QUIZ%20ARMS&preview.text_type=custom&query=quicksand). QuickSand is a sans-serif font which has lovely clean lines. I have chosen to use a sans-serif font for the body of the page as studies have found that sans-serif fonts are generally more legible to read on a screen.
+* For the body of the page I have used the google font 
 
-![Quicksand Font Example](documentation/quicksand.webp)
+
 
 ### Imagery
 
-As the website is called Gotta Quiz Them All!, I wanted to use an image for the page background of a pub to give the user the feeling that they are participating in a pub quiz.
-
+As the website is called Gotta Quiz Them All!, I wanted to use an image for the page background 
 ### Wireframes
 
 Wireframes were created for mobile, tablet and desktop using balsamiq.
 
-![Home Page](documentation/wireframes/homewireframe.webp)
-![Difficulty Page](documentation/wireframes/difficultywireframe.webp)
-![Game Page](documentation/wireframes/gamewireframe.webp)
-![High Scores Page](documentation/wireframes/highscorewireframe.webp)
+![Home Page]
+![Difficulty Page]
+![Game Page]
+![High Scores Page]
 
 ### Features
 
@@ -126,24 +121,24 @@ All Pages on the website are responsive and have:
 
 * A favicon in the browser tab.
 
-  ![favicon](documentation/favicon-image.webp)
+  ![favicon]
 
 * The title of the site at the top of every page. This title also acts as a link back to the home page.
-  ![Gotta Quiz Them All! Title](documentation/the-quiz-arms-banner.png)
+  ![Gotta Quiz Them All! Title]
 
 * Every page will display a custom cursor when on a button. This feature is not available on mobile touch devices.
 
-![Custom Cursor](documentation/features/custom-cursor.gif)
+![Custom Cursor]
 
 #### The Home Page
 
 The home page of Gotta Quiz Them All! displays the sites name as a title and then a container which holds some welcome text, including alerting the users that they can navigate back to the home page at any time by clicking on the page name. Below this are three buttons, how to play, play and high scores.
 
-![Home page image](documentation/features/index.png)
+![Home page image]
 
 The how to play  button opens a modal showing the user how to play the game. The modal contains a close button which will close the modal, and show the home page again.
 
-![Modal open image](documentation/features/modal.png)
+![Modal open image]
 
 The play button will redirect the user to the game page to select the difficulty of their quiz and the high Scores button redirects the user to the high scores page.
 
